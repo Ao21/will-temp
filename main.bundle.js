@@ -16,7 +16,7 @@ webpackEmptyAsyncContext.id = "../../../../../src lazy recursive";
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"top__headers\">\n  <c-header-left></c-header-left>\n  <c-header-right></c-header-right>\n</section>\n<div class=\"top__foreground\">\n  <c-chandelier></c-chandelier>\n</div>\n<!-- <div class=\"bottom__foreground\">\n  <c-ticket></c-ticket>\n</div> -->\n<section class=\"content\">\n  <div id=\"\" class=\"content__splash\">\n    <img src=\"assets/svgs/willandpatrick.svg\" alt=\"\">\n  </div>\n  <wedding-info></wedding-info>\n  <wedding-accomodation></wedding-accomodation>\n  <wedding-travel></wedding-travel>\n  <rsvp-default></rsvp-default>\n</section>"
+module.exports = "<section class=\"top__headers\">\n  <c-header-left></c-header-left>\n  <c-header-right></c-header-right>\n</section>\n<div class=\"top__foreground\">\n  <c-chandelier></c-chandelier>\n</div>\n<!-- <div class=\"bottom__foreground\">\n  <c-ticket></c-ticket>\n</div> -->\n<section class=\"content\">\n  <div id=\"\" class=\"content__splash\">\n    <img src=\"assets/svgs/willandpatrick.svg\" alt=\"\">\n  </div>\n  <wedding-info></wedding-info>\n  <wedding-accomodation></wedding-accomodation>\n  <wedding-travel></wedding-travel>\n  <wedding-faq></wedding-faq>\n  <rsvp-default></rsvp-default>\n</section>"
 
 /***/ }),
 
@@ -740,12 +740,14 @@ var TOP_BORDER_RIGHT_LEFT_3 = 40;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wedding_travel_wedding_travel_component__ = __webpack_require__("../../../../../src/app/pages/pages/wedding-travel/wedding-travel.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rsvp_default_rsvp_default_component__ = __webpack_require__("../../../../../src/app/pages/pages/rsvp-default/rsvp-default.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wedding_faq_wedding_faq_component__ = __webpack_require__("../../../../../src/app/pages/pages/wedding-faq/wedding-faq.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -761,8 +763,8 @@ var PagesModule = (function () {
 PagesModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_6__angular_forms__["a" /* FormsModule */]],
-        declarations: [__WEBPACK_IMPORTED_MODULE_2__wedding_info_wedding_info_component__["a" /* WeddingInfoComponent */], __WEBPACK_IMPORTED_MODULE_3__wedding_accomodation_wedding_accomodation_component__["a" /* WeddingAccomodationComponent */], __WEBPACK_IMPORTED_MODULE_4__wedding_travel_wedding_travel_component__["a" /* WeddingTravelComponent */], __WEBPACK_IMPORTED_MODULE_5__rsvp_default_rsvp_default_component__["a" /* RsvpDefaultComponent */]],
-        exports: [__WEBPACK_IMPORTED_MODULE_2__wedding_info_wedding_info_component__["a" /* WeddingInfoComponent */], __WEBPACK_IMPORTED_MODULE_3__wedding_accomodation_wedding_accomodation_component__["a" /* WeddingAccomodationComponent */], __WEBPACK_IMPORTED_MODULE_4__wedding_travel_wedding_travel_component__["a" /* WeddingTravelComponent */], __WEBPACK_IMPORTED_MODULE_5__rsvp_default_rsvp_default_component__["a" /* RsvpDefaultComponent */]]
+        declarations: [__WEBPACK_IMPORTED_MODULE_2__wedding_info_wedding_info_component__["a" /* WeddingInfoComponent */], __WEBPACK_IMPORTED_MODULE_3__wedding_accomodation_wedding_accomodation_component__["a" /* WeddingAccomodationComponent */], __WEBPACK_IMPORTED_MODULE_4__wedding_travel_wedding_travel_component__["a" /* WeddingTravelComponent */], __WEBPACK_IMPORTED_MODULE_5__rsvp_default_rsvp_default_component__["a" /* RsvpDefaultComponent */], __WEBPACK_IMPORTED_MODULE_7__wedding_faq_wedding_faq_component__["a" /* WeddingFaqComponent */]],
+        exports: [__WEBPACK_IMPORTED_MODULE_2__wedding_info_wedding_info_component__["a" /* WeddingInfoComponent */], __WEBPACK_IMPORTED_MODULE_3__wedding_accomodation_wedding_accomodation_component__["a" /* WeddingAccomodationComponent */], __WEBPACK_IMPORTED_MODULE_4__wedding_travel_wedding_travel_component__["a" /* WeddingTravelComponent */], __WEBPACK_IMPORTED_MODULE_5__rsvp_default_rsvp_default_component__["a" /* RsvpDefaultComponent */], __WEBPACK_IMPORTED_MODULE_7__wedding_faq_wedding_faq_component__["a" /* WeddingFaqComponent */]]
     })
 ], PagesModule);
 
@@ -901,7 +903,7 @@ var _a;
 /***/ "../../../../../src/app/pages/pages/wedding-accomodation/wedding-accomodation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<img class=\"borders\" src=\"assets/svgs/left-lines.svg\" alt=\"\">\n<section>\n  <h2>Accomodation</h2>\n  <div class=\"spacer\"></div>\n\n  <div class=\"accomodation__container\">\n    <article class=\"accomodation__item\">\n      <header>\n        <img src=\"assets/svgs/hotel.svg\" alt=\"\">\n        <h6>Langton House Hotel</h6>\n      </header>\n      <div class=\"accomodation__details\">\n        <p class=\"accomodation__phone\">056 776 5133</p>\n        <p class=\"accomodation__address\">67 John Street Lower,<br>Gardens,<br>Kilkenny.</p>\n        <p class=\"accomodation__info\">Just next door to the reception, Langton House Hotel is on the main street in Kilkenny, there are a limited number\n          of rooms held for the night, please book early to avoid disappointment.</p>\n      </div>\n\n    </article>\n\n     <article class=\"accomodation__item\">\n      <header>\n        <img src=\"assets/svgs/airbnb.svg\" alt=\"\">\n        <h4>Airbnb</h4>\n      </header>\n      <div class=\"accomodation__details\">\n        <p class=\"accomodation__info\">If you're interested in a more intimate stay in Kilkenny, we both highly recommend some of the beautiful and relaxing AirBnB options that are available in Kilkenny City.</p>\n        <p class=\"accomodation__link\"><a href=\"https://www.airbnb.com/s/Kilkenny--Ireland/homes?checkin=2017-09-23&checkout=2017-09-24&allow_override%5B%5D=&s_tag=DYKTJ5aT\">Click here to see whats available.</a></p>\n      </div>\n\n    </article>\n  </div>\n</section>\n<img class=\"borders\" src=\"assets/svgs/right-lines.svg\" alt=\"\">"
+module.exports = "<img class=\"borders\" src=\"assets/svgs/left-lines.svg\" alt=\"\">\n<section>\n  <h2>Accomodation</h2>\n  <div class=\"spacer\"></div>\n\n  <div class=\"accomodation__container\">\n    <article class=\"accomodation__item\">\n      <header>\n        <img src=\"assets/svgs/hotel.svg\" alt=\"\">\n        <h6>Langton House Hotel</h6>\n      </header>\n      <div class=\"accomodation__details\">\n        <p class=\"accomodation__phone\">056 776 5133</p>\n        <p class=\"accomodation__address\">67 John Street Lower,<br>Gardens,<br>Kilkenny.</p>\n        <p class=\"accomodation__info\">Just next door to the reception, Langton House Hotel is on the main street in Kilkenny, there are a limited number\n          of rooms held for the night, please book early to avoid disappointment.</p>\n      </div>\n    </article>\n\n    <article class=\"accomodation__item\">\n      <header>\n        <img src=\"assets/svgs/hotel.svg\" alt=\"\">\n        <h6>River Court Hotel</h6>\n      </header>\n      <div class=\"accomodation__details\">\n        <p class=\"accomodation__phone\">056 772 3388</p>\n        <p class=\"accomodation__address\">The Bridge,<br>John Street,<br>Kilkenny.</p>\n        <p class=\"accomodation__info\">Just across from Kilkenny Castle is the River Court Hotel with classically-styled rooms and suites, plus a casual bar and refined dining.</p>\n      </div>\n    </article>\n\n    <article class=\"accomodation__item\">\n      <header>\n        <img src=\"assets/svgs/hotel.svg\" alt=\"\">\n        <h6>Hotel Kilkenny</h6>\n      </header>\n      <div class=\"accomodation__details\">\n        <p class=\"accomodation__phone\">056 776 5133</p>\n        <p class=\"accomodation__address\">College Rd,<br>Sugarloafhill,<br>Kilkenny.</p>\n        <p class=\"accomodation__info\">Just next door to the reception, Langton House Hotel is on the main street in Kilkenny, there are a limited number\n          of rooms held for the night, please book early to avoid disappointment.</p>\n      </div>\n    </article>\n\n    <article class=\"accomodation__item\">\n      <header>\n        <img src=\"assets/svgs/airbnb.svg\" alt=\"\">\n        <h4>Airbnb</h4>\n      </header>\n      <div class=\"accomodation__details\">\n        <p class=\"accomodation__info\">If you're interested in a more intimate stay in Kilkenny, we both highly recommend some of the beautiful and relaxing\n          AirBnB options that are available in Kilkenny City.</p>\n        <p class=\"accomodation__link\"><a href=\"https://www.airbnb.com/s/Kilkenny--Ireland/homes?checkin=2017-09-23&checkout=2017-09-24&allow_override%5B%5D=&s_tag=DYKTJ5aT\">Click here to see whats available.</a></p>\n      </div>\n\n    </article>\n  </div>\n</section>\n<img class=\"borders\" src=\"assets/svgs/right-lines.svg\" alt=\"\">"
 
 /***/ }),
 
@@ -956,6 +958,67 @@ WeddingAccomodationComponent = __decorate([
 ], WeddingAccomodationComponent);
 
 //# sourceMappingURL=wedding-accomodation.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/pages/wedding-faq/wedding-faq.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<img class=\"borders\" src=\"assets/svgs/left-lines.svg\" alt=\"\">\n<section>\n  <h2>FAQs</h2>\n  <div class=\"spacer\"></div>\n\n</section>\n<img class=\"borders\" src=\"assets/svgs/right-lines.svg\" alt=\"\">"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/pages/wedding-faq/wedding-faq.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ":host {\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto;\n  position: relative;\n  background-color: #7d8895;\n  width: 100%;\n  padding: 0 35px;\n  height: 50vh;\n  float: left;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n  :host > img.borders {\n    position: absolute;\n    height: 100%; }\n    :host > img.borders:last-of-type {\n      right: 35px; }\n  :host > section {\n    -webkit-box-flex: 1;\n        -ms-flex: 1 1 auto;\n            flex: 1 1 auto;\n    padding: 6rem 65px 0;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: column nowrap;\n            flex-flow: column nowrap;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-bottom: 6rem; }\n    :host > section > h2 {\n      -webkit-box-flex: 0;\n          -ms-flex: 0 0 auto;\n              flex: 0 0 auto;\n      color: #3e3e3e;\n      text-align: center;\n      max-width: 70%;\n      font-family: 'mrs-eaves';\n      max-width: 60%;\n      margin-bottom: 3rem; }\n  :host .spacer {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: 100px;\n    height: 5px;\n    background-color: #3e3e3e;\n    margin-bottom: 3rem; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/pages/wedding-faq/wedding-faq.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WeddingFaqComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var WeddingFaqComponent = (function () {
+    function WeddingFaqComponent() {
+    }
+    WeddingFaqComponent.prototype.ngOnInit = function () {
+    };
+    return WeddingFaqComponent;
+}());
+WeddingFaqComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'wedding-faq',
+        template: __webpack_require__("../../../../../src/app/pages/pages/wedding-faq/wedding-faq.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/pages/wedding-faq/wedding-faq.component.scss")]
+    }),
+    __metadata("design:paramtypes", [])
+], WeddingFaqComponent);
+
+//# sourceMappingURL=wedding-faq.component.js.map
 
 /***/ }),
 
@@ -1022,7 +1085,7 @@ WeddingInfoComponent = __decorate([
 /***/ "../../../../../src/app/pages/pages/wedding-travel/wedding-travel.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<img class=\"borders\" src=\"assets/svgs/left-lines.svg\" alt=\"\">\n<section>\n  <h2>Travel</h2>\n  <div class=\"spacer\"></div>\n  <nav class=\"tabs\">\n    <a [class.active]=\"activeTab === 'bus'\" (click)=\"selectTab('bus')\">Bus</a>\n    <a [class.active]=\"activeTab === 'car'\" (click)=\"selectTab('car')\">Car</a>\n    <a [class.active]=\"activeTab === 'train'\" (click)=\"selectTab('train')\">Train</a>\n    <a [class.active]=\"activeTab === 'parking'\" (click)=\"selectTab('parking')\">Parking</a>\n  </nav>\n  <div class=\"tab__container\">\n    <div *ngIf=\"activeTab === 'bus'\" class=\"tab__item\">\n      <section>\n        <header>\n          <img src=\"assets/svgs/bus.svg\" alt=\"\">\n          <h3>From Dublin</h3>\n        </header>\n        <article>\n          <p><strong>Bus Éireann has cancelled the No. 7 route</strong>, so the other options are <a target=\"_blank\" href=\"http://jjkavanagh.ie/timetable-detail-page?RouteNo=717&IsWeb=1&IsCollegeRoute=0&Direction=1&RGrp=Main%20Routes%20^%20Airport%20Routes\"><strong>JJ Kavanaghs</strong></a> that goes at 6.50, 11.05, 13.05, 15.05, 17.05, 18.10, 19.05, 21.05 and 23.35 from Heuston Station or <a target=\"_blank\" href=\"http://www.dublincoach.ie/timetables-fares/M9-waterford-kilkenny-dublin-bus.php\"><strong>Dublin Coach</strong></a> that leaves from Burgh Quay every 2 hours from 6am.</p>\n        </article>\n      </section>\n\n      <section>\n        <header>\n          <img src=\"assets/svgs/bus.svg\" alt=\"\">\n          <h3>From Cork</h3>\n        </header>\n        <article>\n          <p>Get the Dublin Coach (600) towards Dublin from St Patricks Quay across from the bus station, every two hours from 5am.</p>\n        </article>\n      </section>\n\n       <section>\n        <header>\n          <img src=\"assets/svgs/bus.svg\" alt=\"\">\n          <h3>From Galway</h3>\n        </header>\n        <article>\n          <p>Take the <a target=\"_blank\" href=\"http://www.citylink.ie/uploads/images/timetables43/timetables26/timetable_800x850pixel.jpg\">Citylink</a> (760) or <a target=\"_blank\" href=\"http://www.gobus.ie/timetable.php?map=28\">GoBus</a> (720) to Dublin, then follow the directions from Dublin to Kilkenny. When transferring in Dublin Eden Quay is across the river from Burgh Quay when transfering with GoBus, with Citylink its easier to just transfer at the Airport. This will take around 5-6 hours, the train is 4 hours.</p>\n        </article>\n      </section>\n\n\n\n    </div>\n  </div>\n</section>\n<img class=\"borders\" src=\"assets/svgs/right-lines.svg\" alt=\"\">"
+module.exports = "<img class=\"borders\" src=\"assets/svgs/left-lines.svg\" alt=\"\">\n<section>\n  <h2>Travel</h2>\n  <div class=\"spacer\"></div>\n  <nav class=\"tabs\">\n    <a [class.active]=\"activeTab === 'bus'\" (click)=\"selectTab('bus')\">Bus</a>\n    <a [class.active]=\"activeTab === 'train'\" (click)=\"selectTab('train')\">Train</a>\n    <a [class.active]=\"activeTab === 'parking'\" (click)=\"selectTab('parking')\">Parking</a>\n  </nav>\n  <div class=\"tab__container\">\n    <div *ngIf=\"activeTab === 'bus'\" class=\"tab__item\">\n      <section>\n        <header>\n          <img src=\"assets/svgs/bus.svg\" alt=\"\">\n          <h3>From Dublin</h3>\n        </header>\n        <article>\n          <p>Bus Éireann has cancelled the No. 7 route, the other options are <a target=\"_blank\" href=\"http://jjkavanagh.ie/timetable-detail-page?RouteNo=717&IsWeb=1&IsCollegeRoute=0&Direction=1&RGrp=Main%20Routes%20^%20Airport%20Routes\"><strong>JJ Kavanaghs</strong></a> that goes at 6.50, 11.05, 13.05, 15.05, 17.05, 18.10, 19.05, 21.05 and 23.35 from Heuston Station or <a target=\"_blank\" href=\"http://www.dublincoach.ie/timetables-fares/M9-waterford-kilkenny-dublin-bus.php\"><strong>Dublin Coach</strong></a> that leaves from Burgh Quay every 2 hours from 6am.</p>\n        </article>\n      </section>\n\n      <section>\n        <header>\n          <img src=\"assets/svgs/bus.svg\" alt=\"\">\n          <h3>From Cork</h3>\n        </header>\n        <article>\n          <p>Get the Dublin Coach (600) towards Dublin from St Patricks Quay across from the bus station, every two hours from 5am.</p>\n        </article>\n      </section>\n\n       <section>\n        <header>\n          <img src=\"assets/svgs/bus.svg\" alt=\"\">\n          <h3>From Galway</h3>\n        </header>\n        <article>\n          <p>Take the <a target=\"_blank\" href=\"http://www.citylink.ie/uploads/images/timetables43/timetables26/timetable_800x850pixel.jpg\">Citylink</a> (760) or <a target=\"_blank\" href=\"http://www.gobus.ie/timetable.php?map=28\">GoBus</a> (720) to Dublin, then follow the directions from Dublin to Kilkenny. When transferring in Dublin Eden Quay is across the river from Burgh Quay when transfering with GoBus, with Citylink its easier to just transfer at the Airport. This will take around 5-6 hours, the train is 4 hours.</p>\n        </article>\n      </section>\n\n    </div>\n\n    <div *ngIf=\"activeTab === 'train'\" class=\"tab__item\">\n      <section>\n        <header>\n          <img src=\"assets/svgs/bus.svg\" alt=\"\">\n          <h3>Trains</h3>\n        </header>\n        <article>\n          <p>Travelling by train is usually the fastest way to get between cities, you can take advantage of cheaper tickets if you book in advance.</p>\n        </article>\n      </section>\n\n\n    </div>\n  </div>\n</section>\n<img class=\"borders\" src=\"assets/svgs/right-lines.svg\" alt=\"\">"
 
 /***/ }),
 
@@ -1034,7 +1097,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ":host {\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto;\n  position: relative;\n  background-color: white;\n  width: 100%;\n  padding: 0 35px;\n  height: 100vh;\n  float: left;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n  :host > img.borders {\n    position: absolute;\n    height: 100%; }\n    :host > img.borders:last-of-type {\n      right: 35px; }\n  :host > section {\n    -webkit-box-flex: 1;\n        -ms-flex: 1 1 auto;\n            flex: 1 1 auto;\n    padding: 6rem 65px 0;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: column nowrap;\n            flex-flow: column nowrap;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-bottom: 6rem; }\n    :host > section > h2 {\n      -webkit-box-flex: 0;\n          -ms-flex: 0 0 auto;\n              flex: 0 0 auto;\n      color: #3e3e3e;\n      text-align: center;\n      max-width: 70%;\n      font-family: 'mrs-eaves';\n      max-width: 60%;\n      margin-bottom: 3rem; }\n  :host .spacer {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: 100px;\n    height: 5px;\n    background-color: #3e3e3e;\n    margin-bottom: 3rem; }\n  :host .tab__container {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: column nowrap;\n            flex-flow: column nowrap;\n    margin: 0 3rem;\n    width: 80%; }\n  :host .tab__item article {\n    max-width: 50%;\n    margin-left: 3rem; }\n  :host .tab__item header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: end;\n        -ms-flex-align: end;\n            align-items: flex-end;\n    margin-bottom: 0.75rem; }\n    :host .tab__item header img {\n      margin-right: 1.5rem; }\n    :host .tab__item header h3 {\n      font-family: 'jubilat';\n      font-weight: 200; }\n  :host nav {\n    margin-bottom: 3rem; }\n    :host nav a {\n      font-family: 'mrs-eaves';\n      font-size: 1.33333333rem;\n      line-height: 1.125;\n      margin-right: 2rem;\n      cursor: pointer; }\n      :host nav a:after {\n        content: '-';\n        position: absolute;\n        margin-left: 1rem;\n        -webkit-transform: translateX(-0.1rem);\n                transform: translateX(-0.1rem); }\n      :host nav a:last-child {\n        margin-right: 0; }\n      :host nav a:last-child:after {\n        content: ''; }\n      :host nav a.active {\n        text-decoration: underline; }\n", ""]);
+exports.push([module.i, ":host {\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto;\n  position: relative;\n  background-color: white;\n  width: 100%;\n  padding: 0 35px;\n  height: 100vh;\n  float: left;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n  :host > img.borders {\n    position: absolute;\n    height: 100%; }\n    :host > img.borders:last-of-type {\n      right: 35px; }\n  :host > section {\n    -webkit-box-flex: 1;\n        -ms-flex: 1 1 auto;\n            flex: 1 1 auto;\n    padding: 6rem 65px 0;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: column nowrap;\n            flex-flow: column nowrap;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-bottom: 6rem; }\n    :host > section > h2 {\n      -webkit-box-flex: 0;\n          -ms-flex: 0 0 auto;\n              flex: 0 0 auto;\n      color: #3e3e3e;\n      text-align: center;\n      max-width: 70%;\n      font-family: 'mrs-eaves';\n      max-width: 60%;\n      margin-bottom: 3rem; }\n  :host .spacer {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: 100px;\n    height: 5px;\n    background-color: #3e3e3e;\n    margin-bottom: 3rem; }\n  :host .tab__container {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: column nowrap;\n            flex-flow: column nowrap;\n    margin: 0 3rem;\n    width: 80%; }\n  :host .tab__item article {\n    max-width: 100%;\n    margin-left: 3rem; }\n  :host .tab__item header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: end;\n        -ms-flex-align: end;\n            align-items: flex-end;\n    margin-bottom: 0.75rem; }\n    :host .tab__item header img {\n      margin-right: 1.5rem; }\n    :host .tab__item header h3 {\n      font-family: 'jubilat';\n      font-weight: 200; }\n  :host nav {\n    margin-bottom: 3rem; }\n    :host nav a {\n      font-family: 'mrs-eaves';\n      font-size: 1.33333333rem;\n      line-height: 1.125;\n      margin-right: 2rem;\n      cursor: pointer; }\n      :host nav a:after {\n        content: '-';\n        position: absolute;\n        margin-left: 1rem;\n        -webkit-transform: translateX(-0.1rem);\n                transform: translateX(-0.1rem); }\n      :host nav a:last-child {\n        margin-right: 0; }\n      :host nav a:last-child:after {\n        content: ''; }\n      :host nav a.active {\n        text-decoration: underline; }\n", ""]);
 
 // exports
 
